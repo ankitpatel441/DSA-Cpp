@@ -4,7 +4,6 @@ using namespace std;
 
 void buySellStocks(int prices[], int n) {
     int bestBuy[100000];
-
     bestBuy[0] = INT_MAX;
 
     for (int i = 1; i < n; i++) {
