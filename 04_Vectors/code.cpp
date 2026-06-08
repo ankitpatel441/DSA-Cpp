@@ -23,12 +23,23 @@ Topics to Cover:
 #include <algorithm>
 using namespace std;
 
-// TODO: Add your code here
 
 int main() {
-    cout << "Welcome to 04_Vectors!" << endl;
-    
-    // TODO: Test cases here
+    //sratic Memory Allocation
+    int arr[100] = {1, 2, 3, 4, 5};
+
+    //Dynamic Memory Allocation
+    int size;
+    cin >> size;
+
+    int *arr1 = new int[size]; 
+
+    int x = 1; 
+    for(int i=0; i<size; i++) {
+        arr1[i] = x;
+        cout << arr1[i] << " ";
+        x++;
+    }
     
     return 0;
 }
